@@ -94,7 +94,6 @@ class TasksController extends Controller
      */
     public function edit($id)
     {
-        dd($id);
         $task = Task::find($id);
         
         if (\Auth::id() === $task->user_id) {
